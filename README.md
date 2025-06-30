@@ -64,4 +64,54 @@ This project is a backend clone of the AirBnB platform. It's designed to help us
 - **Postman**: A tool for testing and debugging API endpoints during development.
 - **Python**: The core programming language used to write server logic and handle data processing.
 
+# 🗄️ Database Design
+
+This section outlines the main entities in the AirBnB Clone project and how they relate to each other.
+
+## 📌 Entities and Key Fields
+
+### 1. Users
+- `id`: Unique identifier
+- `name`: Full name of the user
+- `email`: Email address (used for login)
+- `password_hash`: Hashed password for authentication
+- `role`: Defines if the user is a host or guest
+
+### 2. Properties
+- `id`: Unique identifier
+- `user_id`: Owner of the property (foreign key to Users)
+- `title`: Short name of the listing
+- `location`: Address or general area
+- `price_per_night`: Cost to book per night
+
+### 3. Bookings
+- `id`: Unique identifier
+- `user_id`: The guest making the booking (foreign key to Users)
+- `property_id`: The property being booked (foreign key to Properties)
+- `start_date`: Start of the booking
+- `end_date`: End of the booking
+
+### 4. Reviews
+- `id`: Unique identifier
+- `user_id`: The user writing the review (foreign key to Users)
+- `property_id`: The property being reviewed
+- `rating`: Numeric score (e.g., 1 to 5)
+- `comment`: Text feedback
+
+### 5. Payments
+- `id`: Unique identifier
+- `booking_id`: Related booking (foreign key to Bookings)
+- `amount`: Payment amount
+- `payment_status`: Status (e.g., pending, completed)
+- `payment_date`: When the payment was made
+
+### 🔗 Entity Relationships
+
+- A **User** can create multiple **Properties** (host role).
+- A **User** can make multiple **Bookings** (guest role).
+- A **Property** can have many **Bookings** and **Reviews**.
+- A **Booking** is made by one **User** and belongs to one **Property**.
+- A **Payment** is linked to one **Booking**.
+- A **Review** is written by a **User** for a **Property** they’ve booked.
+
 
