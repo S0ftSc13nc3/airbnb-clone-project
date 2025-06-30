@@ -114,4 +114,27 @@ This section outlines the main entities in the AirBnB Clone project and how they
 - A **Payment** is linked to one **Booking**.
 - A **Review** is written by a **User** for a **Property** they’ve booked.
 
+# 🧩 Feature Breakdown
+
+This section outlines the core features included in the AirBnB Clone project and their role in delivering a functional rental platform.
+
+## 1. User Management
+Handles user registration, login, and profile management. Users can either list properties as hosts or make bookings as guests, depending on their role.
+
+## 2. Property Management
+Allows hosts to add, update, and delete property listings. Each property includes details like title, location, pricing, and availability, making it visible to potential guests.
+
+## 3. Booking System
+Enables guests to book available properties for specific dates. The system ensures that bookings don’t overlap and that both parties can view booking details.
+
+## 4. Payment Processing
+Handles payment transactions tied to bookings. It ensures secure payments, updates booking statuses, and stores payment history.
+
+## 5. Reviews and Ratings
+Allows guests to leave feedback on properties they’ve stayed in. This helps other users make informed decisions and encourages quality service from hosts.
+
+## 6. Search and Filtering *(optional but useful)*
+Provides search functionality so users can find listings by location, price range, or availability. This improves the user experience when browsing properties.
+
+
 
