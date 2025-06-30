@@ -53,4 +53,15 @@ This project is a backend clone of the AirBnB platform. It's designed to help us
 - Create test cases and scenarios based on project requirements.
 - Perform manual and automated testing.
 - Report bugs and verify fixes.
+- 
+## 🧰 Technology Stack
+- **Django**: A high-level Python web framework used to build the backend logic and RESTful APIs quickly and securely.
+- **PostgreSQL**: A powerful open-source relational database used to store and manage user, property, booking, and payment data.
+- **GraphQL**: A query language and runtime that allows clients to request exactly the data they need, improving efficiency over traditional REST endpoints.
+- **Docker**: Used to containerize the application, ensuring consistent environments for development, testing, and deployment.
+- **Git & GitHub**: For version control and team collaboration. Git tracks changes in code, and GitHub hosts the project repository.
+- **Draw.io**: A diagramming tool used to design system architecture, use case diagrams, and ER models.
+- **Postman**: A tool for testing and debugging API endpoints during development.
+- **Python**: The core programming language used to write server logic and handle data processing.
+
 
