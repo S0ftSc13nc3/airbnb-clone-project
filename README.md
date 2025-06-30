@@ -158,6 +158,22 @@ Payment processing will be handled through a secure third-party provider (like S
 ## 6. HTTPS and Data Encryption
 All data exchanged with the API will be encrypted using HTTPS. This protects user credentials, personal info, and other sensitive data from being intercepted.
 
+# ⚙️ CI/CD Pipeline
+
+CI/CD (Continuous Integration and Continuous Deployment) is a development practice that helps teams deliver code changes more frequently and reliably. CI automatically tests and validates code every time it's pushed to the repository, while CD automates the process of deploying the code to a staging or production environment.
+
+## Why It Matters for This Project
+- Ensures new code doesn’t break existing features through automated testing.
+- Speeds up development by automating repetitive tasks like builds and deployments.
+- Makes the project more reliable by catching issues early and maintaining consistency across environments.
+
+## Tools We May Use
+- **GitHub Actions**: To automate workflows such as running tests, checking code formatting, and deploying to servers.
+- **Docker**: To containerize the app so that it runs the same way on every machine.
+- **Heroku / Render / Railway (optional)**: For deploying the app to a live environment for testing or demo purposes.
+
+As the project grows, setting up a proper CI/CD pipeline will help maintain code quality and reduce manual deployment overhead.
+
 
 
 
