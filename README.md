@@ -136,5 +136,28 @@ Allows guests to leave feedback on properties they’ve stayed in. This helps ot
 ## 6. Search and Filtering *(optional but useful)*
 Provides search functionality so users can find listings by location, price range, or availability. This improves the user experience when browsing properties.
 
+# 🔐 API Security
+
+Security is critical to protect user data, prevent misuse, and ensure safe transactions within the platform. This section outlines the key API security measures we plan to implement.
+
+## 1. Authentication
+We will use token-based authentication (e.g., JWT) to verify the identity of users. This ensures that only registered users can access protected endpoints, such as making a booking or updating a property listing.
+
+## 2. Authorization
+Role-based access control will be applied to restrict what different users can do. For example, only hosts can create or edit properties, while only guests can make bookings. This prevents unauthorized access to sensitive actions.
+
+## 3. Input Validation & Sanitization
+All input data will be validated and sanitized to prevent injection attacks (like SQL injection or XSS). This protects both the database and the frontend from harmful data.
+
+## 4. Rate Limiting
+To prevent abuse (like brute-force login attempts or spamming the API), we will implement rate limiting. This ensures fair use of system resources and improves overall reliability.
+
+## 5. Secure Payments
+Payment processing will be handled through a secure third-party provider (like Stripe or PayPal). Sensitive payment data will never be stored on our servers, reducing the risk of data breaches.
+
+## 6. HTTPS and Data Encryption
+All data exchanged with the API will be encrypted using HTTPS. This protects user credentials, personal info, and other sensitive data from being intercepted.
+
+
 
 
